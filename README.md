@@ -5,17 +5,17 @@ It enables authenticated users to shorten URLs, manage their links, and redirect
 
 ---
 
-## ⭐ Features
-- 🔐 **JWT-based Authentication** (Signup/Login)
-- 🔗 **URL Shortening** with optional custom codes
-- 🧪 **Zod Validation** for all request bodies
-- 🗄️ **PostgreSQL + Drizzle ORM** for migrations & schema
-- 📡 **Redirection Support**
-- 🐳 Docker support for local database (optional)
+##  Features
+-  **JWT-based Authentication** (Signup/Login)
+-  **URL Shortening** with optional custom codes
+-  **Zod Validation** for all request bodies
+-  **PostgreSQL + Drizzle ORM** for migrations & schema
+-  **Redirection Support**
+-  **Docker support for local database (optional)
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 - **Node.js + Express**
 - **Drizzle ORM**
 - **PostgreSQL**
@@ -25,7 +25,7 @@ It enables authenticated users to shorten URLs, manage their links, and redirect
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1️⃣ Clone the repository
 ```bash

@@ -1,4 +1,4 @@
-# TrimLink — Modern URL Shortener API
+# TrimLink 
 
 TrimLink is a lightweight, secure, and production-ready **URL Shortening API** built with **Node.js, Express, Drizzle ORM, PostgreSQL, JWT, and Zod**.  
 It enables authenticated users to shorten URLs, manage their links, and redirect anyone accessing the shortened link to the target URL.

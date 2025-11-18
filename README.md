@@ -1,59 +1,66 @@
- TrimLink — URL Shortener API
+# TrimLink — Modern URL Shortener API
 
-TrimLink is a fast and secure URL Shortener API built with Node.js, Express, PostgreSQL, Drizzle ORM, JWT Authentication, and Zod Validation.
-It allows users to register, log in, shorten URLs, and handle redirections efficiently.
+TrimLink is a lightweight, secure, and production-ready **URL Shortening API** built with **Node.js, Express, Drizzle ORM, PostgreSQL, JWT, and Zod**.  
+It enables authenticated users to shorten URLs, manage their links, and redirect anyone accessing the shortened link to the target URL.
 
-⸻
+---
 
-⭐ Features
-	•	🔐 JWT Authentication (signup, login, protected routes)
-	•	🔗 URL Shortening with optional custom codes
-	•	🧪 Zod-based validation for all inputs
-	•	🗄 Drizzle ORM + PostgreSQL for clean, typed database access
-	•	🚦 Redirection from short code to original URL
-	•	🐳 Docker support for database setup
+## ⭐ Features
+- 🔐 **JWT-based Authentication** (Signup/Login)
+- 🔗 **URL Shortening** with optional custom codes
+- 🧪 **Zod Validation** for all request bodies
+- 🗄️ **PostgreSQL + Drizzle ORM** for migrations & schema
+- 📡 **Redirection Support**
+- 🐳 Docker support for local database (optional)
 
-⸻
+---
 
-📁 Tech Stack
-	•	Backend: Node.js, Express.js
-	•	Database: PostgreSQL + Drizzle ORM
-	•	Auth: JWT
-	•	Validation: Zod
-	•	Utility: nanoid
-	•	Container: Docker (optional)
+## 📦 Tech Stack
+- **Node.js + Express**
+- **Drizzle ORM**
+- **PostgreSQL**
+- **Zod**
+- **JWT**
+- **NanoID**
 
-⸻
+---
 
-🛠️ Getting Started
+## 🚀 Getting Started
 
-Follow these steps to run TrimLink locally.
-
-⸻
-
-1️⃣ Clone the Repository
-
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/YasodharGubba05/TrimLink.git
 cd TrimLink
+```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install dependencies
+```bash
 pnpm install
+```
 
-3️⃣ Configure Environment Variables
-
-Create a .env file in the project root:
+### 3️⃣ Configure environment variables  
+Create a `.env` file:
+```
 DATABASE_URL=postgres://username:password@localhost:5432/trimlink
 JWT_SECRET=your-secret-key
 PORT=8000
+```
 
-4️⃣ Start PostgreSQL (Optional via Docker)
-
+### 4️⃣ (Optional) Start PostgreSQL using Docker
+```bash
 docker-compose up -d
+```
 
-5️⃣ Run Drizzle Migrations
-
+### 5️⃣ Push migrations
+```bash
 pnpm drizzle-kit push
+```
 
-6️⃣ Start the Development Server
-
+### 6️⃣ Start the server
+```bash
 pnpm dev
+```
+
+Server runs at: **http://localhost:8000**
+
+
